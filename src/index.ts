@@ -55,5 +55,4 @@ function renameVueFilesPlugin(options = { srcDir: 'src' }) {
     updateReferences(srcDir)
 }
 
-export default renameVueFilesPlugin;
-
+module.exports = renameVueFilesPlugin;

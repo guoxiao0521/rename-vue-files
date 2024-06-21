@@ -2,10 +2,19 @@
   "name": "rename-vue-files",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "types": "src/index.d.ts",
+  "main": "bin/index.js",
+  "type": "commonjs",
   "scripts": {
-    "prettier": "prettier --write ./src"
+    "prettier": "prettier --write ./src",
+    "build": "tsc",
+    "build:pack": "tsc && npm pack ."
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "bin": {
+    "rename-vue-files": "./bin/index.js"
   },
   "keywords": [
     "vite",
